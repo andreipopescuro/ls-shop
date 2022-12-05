@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barber Shop</title>
+
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="./images/scrissors-removebg-preview.png" />
+  <script src="https://www.paypal.com/sdk/js?client-id=ATzMWt2uSMDq9kDs19Hpt_25xGgqiGAfM2pT13e0mYsYxLlsJKtYIMDNocgOBNeXkpTvQUB9LU53k2zl"></script>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="navbar">
+    <h1>Barber Shop</h1>
+    <i class="fa fa-cart-plus" id="cart-button">
+      <div class="cart-items">0</div>
+    </i>
+  </div>
+  <div class="cart-overlay">
+    <div class="cart-header">
+      <span class="close-cart">
+        <i class="fa fa-window-close"></i>
+      </span>
+      <h2>Your cart</h2>
+    </div>
+    <div class="cart-content"></div>
+    <div class="cart-footer" id="total">
+      <h3>Total: <span class="cart-total">0</span> RON</h3>
+      <button class="clear-cart banner-btn">Sterge tot</button>
+      <div class="confirm-container">
+        <button id="confirm">Confirm comanda</button>
+      </div>
+    </div>
+  </div>
+  <div class="products-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</body>
+
+</html>
